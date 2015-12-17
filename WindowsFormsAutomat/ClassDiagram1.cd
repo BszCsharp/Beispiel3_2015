@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WindowsFormsAutomat.Artikel">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAgAAAAAAAEAAAAAQAAAAEAAAAAEAAAABA=</HashCode>
+      <FileName>Artikel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsAutomat.Kauf">
+    <Position X="4.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAACAAAAAgAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Kauf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
