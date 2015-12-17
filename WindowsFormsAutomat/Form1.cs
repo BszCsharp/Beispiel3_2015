@@ -76,7 +76,7 @@ namespace WindowsFormsAutomat
                 {
                     decimal rueck = k.Zahlen(gesamt);
                     labelRueck.Text = rueck.ToString();
-                    labelMeldung.Text = "Danke für ihren " + k.Artikel.Bezeichnung + "-Einkauf";
+                    labelMeldung.Text = "Danke für Ihren " + k.Artikel.Bezeichnung + "-Einkauf";
                     labelSumme.Text = "0";
                     gesamt = 0;
                 
