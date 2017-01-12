@@ -30,18 +30,18 @@ namespace WindowsFormsAutomat
             artikelArray[3] = new Artikel(20, "Schokoriegel", 0.85m);
             artikelArray[4] = new Artikel(0, "Käsewaffel", 1.20m);
 
-            comboBoxArtikel.Items.Add(artikelArray[0].Bezeichnung);
-            comboBoxArtikel.Items.Add(artikelArray[1].Bezeichnung);
-            comboBoxArtikel.Items.Add(artikelArray[2].Bezeichnung);
-            comboBoxArtikel.Items.Add(artikelArray[3].Bezeichnung);
-            comboBoxArtikel.Items.Add(artikelArray[4].Bezeichnung);
+            comboBoxArtikel.Items.Add(artikelArray[0]);
+            comboBoxArtikel.Items.Add(artikelArray[1]);
+            comboBoxArtikel.Items.Add(artikelArray[2]);
+            comboBoxArtikel.Items.Add(artikelArray[3]);
+            comboBoxArtikel.Items.Add(artikelArray[4]);
 
         }
 
         private void comboBoxArtikel_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = comboBoxArtikel.SelectedIndex;
-            selArticle = artikelArray[index];
+            selArticle = (Artikel)comboBoxArtikel.SelectedItem;
             
             k = new Kauf(selArticle);
 
@@ -76,8 +76,7 @@ namespace WindowsFormsAutomat
                 {
                     decimal rueck = k.Zahlen(gesamt);
                     labelRueck.Text = rueck.ToString();
-                    labelMeldung.Text = "Danke für Ihren " + k.Artikel.Bezeichnung + "-Einkauf";
-                    labelSumme.Text = "0";
+                    labelMeldung.Text = "Danke für Ihren " + k.Artikel.Bezeichnung + "-Einkauf";                   
                     gesamt = 0;
                 
                 }

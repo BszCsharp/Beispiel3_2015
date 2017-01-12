@@ -53,5 +53,9 @@ namespace WindowsFormsAutomat
             else this.Bestand--;
             return result;                 
         }
+        public override string ToString()
+        {
+            return this.Bezeichnung;
+        }
     }
 }
